@@ -1,0 +1,53 @@
+** Starters – Tandoor
+- DAHI KEBAB – 230
+- HARA BHARA KEBAB – 230
+- VEG SEEKH KEBAB – 230
+
+
+**Vegetables / Main Course (Paneer & Veg)
+- JEERA ALOO – 180
+- ALOO PYAAZ – 180
+- CHANA MASALA – 200
+- SEV TOMATO – 220
+
+**Pulses (Dal)
+- DAL FRY – 220
+- DAL TADKA – 220
+
+**Pasta
+- PERI PERI PASTA – 260
+- RED SAUCE PASTA – 270
+
+
+**Momos
+- STEAM MOMOS – 180
+- FRIED MOMOS – 200
+- TANDOORI MOMOS – 210
+
+
+**Pizza
+- MARGHERITA PIZZA – 250
+- CORN & CHEESE PIZZA – 270
+- OTC PIZZA – 270
+
+**Sandwiches & Oven Baked Breads
+- VEG GRILLED SANDWICH – 140
+- CORN & CHEESE SANDWICH – 150
+
+**Mini Meals – Burger, Fries, Maggi
+- ALOO TIKKI BURGER – 100
+- VEG BURGER – 120
+- PANEER TIKKA BURGER – 140
+
+**Drinks – Coffee, Shakes, Mocktails, Etc.
+- ESPRESSO (No milk) – 100
+- AMERICANO – 100
+- MACCHIATO – 100
+- SIGNATURE AFFOGATO – 120
+- IRISH COFFEE – 120
+
+
+**Shakes
+- BLACK CURRENT SHAKE – 150
+- STRAWBERRY SHAKE – 150
+

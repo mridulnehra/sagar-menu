@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sagar Digital Menu - Explore our delicious dishes with our interactive digital menu">
+    <meta name="theme-color" content="#2E8B57">
+    <title>Sagar - Digital Menu</title>
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- =============================================
+         VIEW 1: SPLASH SCREEN
+         ============================================= -->
+    <section id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <!-- Sagar Restaurant Logo -->
+            <img src="./assets/logo.png" alt="Sagar Restaurant Logo" class="logo-splash">
+
+            <h1 class="splash-title">Welcome to <span>Sagar</span></h1>
+            <p class="splash-subtitle">Delicious food, crafted with love</p>
+
+            <button id="view-menu-btn" class="btn-primary">
+                <span>View Menu</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- =============================================
+         VIEW 2: MENU FEED
+         ============================================= -->
+    <section id="menu-feed" class="menu-feed">
+        <!-- Sticky Header -->
+        <header class="menu-header">
+            <div class="header-top">
+                <img src="./assets/logo.png" alt="Sagar Restaurant Logo" class="header-logo">
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.35-4.35" />
+                </svg>
+                <input type="text" id="search-input" class="search-input" placeholder="Search dishes...">
+            </div>
+
+            <!-- Veg/Non-Veg Toggles -->
+            <div class="filter-toggles">
+                <button id="veg-toggle" class="filter-btn active" data-filter="veg">
+                    <span class="veg-icon">🟢</span>
+                    <span>Veg</span>
+                </button>
+                <button id="nonveg-toggle" class="filter-btn" data-filter="nonveg">
+                    <span class="nonveg-icon">🔴</span>
+                    <span>Non-Veg</span>
+                </button>
+            </div>
+
+            <!-- Category Pills -->
+            <nav class="categories-nav">
+                <div class="categories-scroll" id="categories-container">
+                    <!-- Categories will be dynamically inserted here -->
+                </div>
+            </nav>
+        </header>
+
+        <!-- Offers Banner Section -->
+        <section class="offers-section">
+            <div class="offers-scroll" id="offers-container">
+                <!-- Offers will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Dish List Container -->
+        <main class="dishes-container" id="dishes-container">
+            <!-- Dish cards will be dynamically inserted here -->
+        </main>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 15s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            <p>No dishes found</p>
+            <span>Try adjusting your filters</span>
+        </div>
+
+        <!-- Floating Cart Button -->
+        <button id="cart-toggle-btn" class="cart-toggle-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            <span id="cart-count" class="cart-count">0</span>
+        </button>
+
+        <!-- Cart Panel (Slide-up) -->
+        <div id="cart-panel" class="cart-panel">
+            <div class="cart-header">
+                <h3>Your Order</h3>
+                <button id="cart-close-btn" class="cart-close-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+
+            <div id="cart-empty" class="cart-empty">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                <p>Your cart is empty</p>
+                <span>Add dishes to get started</span>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-amount" class="total-amount">₹0</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart-btn" class="btn-clear">Clear All</button>
+                    <button id="place-order-btn" class="btn-place-order">Place Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Overlay -->
+        <div id="cart-overlay" class="cart-overlay"></div>
+    </section>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
