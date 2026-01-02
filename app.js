@@ -379,7 +379,7 @@ const currentTableNumber = urlParams.get('table');
 // WEBHOOK CONFIGURATION (n8n + Telegram)
 // =============================================
 // Replace with your n8n webhook URL
-const WEBHOOK_URL = 'http://10.255.100.124:55000/webhook/sagar-order'; // n8n webhook (local network)
+const WEBHOOK_URL = 'https://restro-menu-backend.onrender.com/webhook/order'; // Production backend on Render
 
 // Function to send order to webhook
 async function sendOrderToWebhook(orderData) {
